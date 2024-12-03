@@ -1,0 +1,65 @@
+
+.login-body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-border {
+    padding: 5px;
+    background-image: linear-gradient(-50deg, rgba(235,137,62,1) 0%, rgba(237,82,85,1) 25%, rgba(215,68,152,1) 50%, rgba(66,92,170,1) 80%, rgba(109,205,232,1) 100%);
+}
+
+.login {
+    padding: 20px 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.login-header {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.login input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.button-div {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 60px;
+}
+
+.login-button {
+    border-radius: 60px;
+    padding: 12px 18px;
+    border: none;
+    background-color: black;
+    font-size: 1.5em;
+    width: 100%;
+    color: white;
+}
+
+.button-div:hover {
+    cursor: pointer;
+    background-size: 200% 200%;
+    animation: gradient-shift 2s linear infinite;
+    background-image: linear-gradient(-50deg, rgba(235,137,62,1) 0%, rgba(237,82,85,1) 25%, rgba(215,68,152,1) 50%, rgba(66,92,170,1) 80%, rgba(109,205,232,1) 100%);
+}
+
+.login-button:hover {
+    cursor: pointer;
+}

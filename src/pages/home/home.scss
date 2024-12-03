@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+.home {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    
+}
+
+.background {
+  height: 100%;
+  width: 90%;
+  position: absolute;
+  background-image: url('../../img/Screenshot 2024-09-04 100258.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: opacity(20%) blur(1px);
+}
+
+h1 {
+    z-index: 10;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Gluten', cursive;
+    font-weight: 600;
+    background: -webkit-linear-gradient(
+        -50deg, 
+        rgba(235,137,62,1) 0%, 
+        rgba(237,82,85,1) 25%, 
+        rgba(215,68,152,1) 50%,
+        rgba(66,92,170,1) 80%, 
+        rgba(109,205,232,1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientAnimation 2s linear infinite;
+        animation-direction: alternate;
+        background-size: 300% 100%;
+}
+
+.home-button-div {
+  z-index: 10;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 60px;
+}
+
+.home-button {
+    z-index: 10;
+    border-radius: 60px;
+    padding: 12px 18px;
+    border: none;
+    background-color: black;
+    font-size: 1.5em;
+}
+
+.link {
+  z-index: 10;
+    text-decoration: none;
+    color: white;
+}
+
+.home-button-div:hover {
+    background-image: linear-gradient(-50deg, rgba(235,137,62,1), rgba(237,82,85,1), rgba(215,68,152,1), rgba(66,92,170,1), rgba(109,205,232,1), rgba(66,92,170,1), rgba(215,68,152,1), rgba(237,82,85,1), rgba(235,137,62,1),);
+    background-size: 200% 200%;
+    animation: gradient-shift 2s linear infinite;
+}
+
+
+
+@keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+      }
+  }
+  
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    h1 {
+      font-size: 6em;
+    }
+  }

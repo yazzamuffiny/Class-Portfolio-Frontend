@@ -1,0 +1,91 @@
+.form-box {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 50px;
+    right: 0;
+    padding: 30px;
+    height: 100vh;
+    border-left: 5px solid transparent;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.form-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 100%;
+    width: 10px;
+    background-image: linear-gradient(
+        -50deg,
+        rgba(235,137,62,1) 0%,
+        rgba(237,82,85,1) 25%,
+        rgba(215,68,152,1) 50%,
+        rgba(66,92,170,1) 80%,
+        rgba(109,205,232,1) 100%
+    );
+    z-index: -1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-box h3 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-box label, input {
+    margin-bottom: 5px;
+}
+
+.form-box label {
+    font-size: 1.3em;
+}
+
+.form-box input {
+    padding: 5px;
+}
+
+.add-project-button {
+    padding: 12px 18px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-radius: 60px;
+}
+
+.form-button-div {
+    padding: 5px;
+    background-color: black;
+    border-radius: 60px;
+}
+
+.form-button-div:hover {
+    cursor: pointer;
+    background-image: linear-gradient(-50deg, rgba(235,137,62,1), rgba(237,82,85,1), rgba(215,68,152,1), rgba(66,92,170,1), rgba(109,205,232,1), rgba(66,92,170,1), rgba(215,68,152,1), rgba(237,82,85,1), rgba(235,137,62,1),);
+    background-size: 200% 200%;
+    animation: gradient-shift 2s linear infinite;
+}
+
+.add-project-button {
+    cursor: pointer;
+}
+
+@keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+      }
+  }
